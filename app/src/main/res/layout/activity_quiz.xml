@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/textViewsorusayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="3dp"
+        android:text="1.Soru"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewbayrak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewyanlis"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewdogru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Diyarbakır"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Eskişehir"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Ankara"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="Adana"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="start" />
+
+    <ImageView
+        android:id="@+id/imageViewbayrak"
+        android:layout_width="278dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/adana" />
+
+    <TextView
+        android:id="@+id/textViewdogru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="26dp"
+        android:text="Doğru:0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewyanlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Yanlış:0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewsayici"
+        android:layout_width="168dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:text="Kalan Süre:10sn"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textViewyanlis"
+        app:layout_constraintStart_toEndOf="@+id/textViewdogru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
